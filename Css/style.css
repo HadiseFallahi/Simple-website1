@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "Byekan";
+  src: url("../Fonts/Byekan.ttf") format("ttf"),
+    url("../Fonts/Byekan.woff") format("woff");
+}
+
+@font-face {
+  font-family: "lalezar";
+  src: url("../Fonts/lalezar.ttf") format("ttf"),
+    url("../Fonts/lalezar.woff") format("woff");
+}
+
+body {
+  font-family: Byekan;
+}
+.header {
+  height: 620px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.top-header {
+  position: relative;
+}
+.logo {
+  color: #dfbd01;
+  font-size: 30px;
+  font-family: Arial;
+  position: absolute;
+  left: 100px;
+  top: 25px;
+}
+.srch {
+  font-family: "Times New Roman";
+  width: 180px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #dfbd01;
+  color: #fff;
+  border-right: none;
+  font-size: 18px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  position: absolute;
+  right: 200px;
+  top: 25px;
+  text-align: center;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  background: #dfbd01;
+  border: 2px solid #dfbd01;
+  color: #000;
+  font-size: 16px;
+  border-bottom-right-radius: 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  position: absolute;
+  right: 100px;
+  top: 25px;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:focus {
+  outline: none;
+}
+.srch:focus {
+  outline: none;
+}
+
+.nav-list {
+  list-style-type: none;
+  padding-top: 75px;
+}
+.nav-item {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+}
+.nav-item a:hover {
+  color: rgb(15, 160, 27);
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.header h1 {
+  font-size: 60px;
+  font-family: lalezar;
+  margin-top: 90px;
+}
+.yel {
+  color: rgb(15, 160, 27);
+}
+
+.header .desc {
+  width: 500px;
+  margin: auto;
+  height: 55px;
+  line-height: 55px;
+  background-color: rgba(59, 59, 59, 0.3);
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-top: 36px;
+  font-size: larger;
+}
+.next {
+  position: absolute;
+  font-size: 50px;
+  left: 75px;
+  top: 260px;
+  cursor: pointer;
+  padding: 10px;
+}
+.prev {
+  position: absolute;
+  font-size: 50px;
+  right: 75px;
+  top: 260px;
+  cursor: pointer;
+  padding: 10px;
+}
+.next:hover {
+  color: black;
+  background-color: gainsboro;
+}
+.prev:hover {
+  color: black;
+  background-color: gainsboro;
+}
+.members {
+  text-align: center;
+  font-size: large;
+  padding: 50px 30px;
+}
+.member-list {
+  list-style-type: none;
+  margin-top: 25px;
+}
+.member-item {
+  display: inline-block;
+  width: 350px;
+  margin: 10px;
+  box-shadow: 0 0 15px gray;
+}
+.member-pic {
+  width: 100%;
+}
+.member-bio {
+  padding: 20px;
+  text-align: justify;
+}
+.member-name {
+  color: #dfbd01;
+  margin-top: 5px;
+  font-size: 25px;
+}
+.member-list .member-item:hover {
+  background-color: lightgray;
+}
+
+.about {
+  height: 680px;
+  background-image: url("../Images/bg.jpg");
+  padding-top: 40px;
+  background-color: #444343;
+  background-blend-mode: multiply;
+}
+.circale {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(133, 133, 133, 0.3);
+  text-align: center;
+  padding: 100px 120px;
+  color: white;
+}
+.circale p {
+  margin-top: 40px;
+  text-align: justify;
+}
+.circale h2 {
+  font-size: 35px;
+}
+
+.bottom {
+  background-color: lightgray;
+  height: 125px;
+  padding-top: 15px;
+  text-align: center;
+}
+.follow {
+  padding-bottom: 10px;
+}
+
+.bottom ion-icon {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.bottom ion-icon:hover {
+  color: rgb(15, 160, 27);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
